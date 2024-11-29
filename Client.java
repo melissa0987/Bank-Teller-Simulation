@@ -1,17 +1,17 @@
-public class Person {
+public class Client {
     private String name;
     private String dateOfBirth; //to differentiate clients with the same name
     private String address;
     private String phoneNumber;
 
     //constructor
-    public Person(){
+    public Client(){
         this.name = "";
         this.dateOfBirth = "";
         this.address = "";
         this.phoneNumber = "";
     }
-    public Person(String name, String dateOfBirth, String address, String phoneNumber ){
+    public Client(String name, String dateOfBirth, String address, String phoneNumber ){
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.address = address;
@@ -49,11 +49,11 @@ public class Person {
     //checks if the client already exist
     @Override
     public boolean equals(Object o){
-        if( !(o instanceof Person)){
+        if( !(o instanceof Client)){
             return false;
         }
 
-        Person d = (Person) o;
+        Client d = (Client) o;
         return this.name.equals(d.getName()) && 
                 this.dateOfBirth.equals(d.getDateOfBirth()) && 
                 this.address.equals(d.getAddress()) &&
