@@ -3,33 +3,27 @@ import java.util.Random;
 public class BankAccount {
     private Client customerInfo;
     //set randomly, then it'll be unchangeable(no setter)
-    private final String ACCOUNT_NUMString;
+    private final String ACCOUNT_NUMS;
     private double balance;
-    private String transactionType;
 
 
-    private static final int ACCOUNT_NUMBER_LENGTH = 10;  // Length of account number
-    private static Random random = new Random();
+    private static final int ACCOUNT_NUMBER_LENGTH = 10;  //length of account number
+    private static final Random random = new Random();
     
     //constructors
     //new bank account
     public BankAccount(){
         this.customerInfo = new Client();
-        this.ACCOUNT_NUMString = generateUniqueAccountNumber();
+        this.ACCOUNT_NUMS = generateUniqueAccountNumber();
         this.balance = 0.0;
-        this.transactionType = "";
     }
     //new bank account with customer info
     //need to do validation in main
     public BankAccount(Client customerInfo){
         this.customerInfo = customerInfo;
-        this.ACCOUNT_NUMString = generateUniqueAccountNumber();
+        this.ACCOUNT_NUMS = generateUniqueAccountNumber();
         this.balance = 0.0;
-        this.transactionType = "";
     }
-
-
-
 
     //to generate a random unique account number
     private String generateUniqueAccountNumber() {
@@ -40,7 +34,42 @@ public class BankAccount {
         return accountNumber;
     }
 
-    //method to retrieved account (by account number)
+    //getters
+    public String getAccountNumber() {
+        return ACCOUNT_NUMS;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    //method to widthdraw money
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrew: $" + amount);
+        } else {
+            System.out.println("Invalid withdrawal amount or insufficient funds.");
+        }
+    }
+    // Methods for deposit and withdrawal
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposited: $" + amount);
+        } else {
+            System.out.println("Invalid deposit amount.");
+        }
+    }
+
+    // Method to display account information
+    public void displayAccountInfo() {
+        System.out.println("Account Number: " + ACCOUNT_NUMS);
+        System.out.println("Balance: $" + balance);
+        if (customerInfo != null) {
+            customerInfo.toString();
+        }
+    }
 
 
 }
