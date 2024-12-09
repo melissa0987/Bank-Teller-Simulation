@@ -1,7 +1,8 @@
 //Melissa Louise Bangloy 1468444
-//The Transaction class handles logging transactions to a file.
-//It has a method to log transaction details to a file called "transaction_history.txt".
+// The Transaction class handles logging transactions to a file.
+// It has a method to log transaction details to a file called "transaction_history.txt".
 // This class ensures that all transactions are saved for future reference.
+// this file would be useful to observe activities 
 
 import java.io.*;
 

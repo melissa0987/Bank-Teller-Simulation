@@ -1,8 +1,8 @@
 //Melissa Louise Bangloy 1468444
 //The ClientFileManager class handles loading and saving client data to a file called "clients.txt".
 //It reads client information from the file, creates Client objects, and adds them to a list.
-// It also saves the list of clients back to the file, including details like name, balance, account number, and last activity date.
-
+//it also saves the list of clients back to the file, including details like name, balance, account number, and last activity date.
+//The file would act as a database to store client informations
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class ClientFileManager {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(",");
-                if (data.length == 7) {  // Expecting 7 fields now (name, dob, address, phone, balance, accountNumber, lastActivityDate)
+                if (data.length == 7) {  //expecting 7 fields (name, dob, address, phone, balance, accountNumber, lastActivityDate)
                     String name = data[0];
                     String dob = data[1];
                     String address = data[2];
@@ -25,7 +25,7 @@ public class ClientFileManager {
                     String accountNumber = data[5];
                     String lastActivityDate = data[6];  // New field for last activity date
                     Client client = new Client(name, dob, address, phone, balance);
-                    client.updateLastActivityDate();  // Correcting this to update the last activity date from the file
+                    client.updateLastActivityDate();
                     clients.add(client);
                 }
             }

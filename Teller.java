@@ -2,7 +2,6 @@
 // The Teller class is responsible for managing clients at the bank.
 //It allows adding new clients, finding existing clients by name and date of birth, and performing actions like deposits, withdrawals, and closing accounts.
 // It also logs transactions and saves client data to a file.
-//
 import java.util.List;
 
 public class Teller {
