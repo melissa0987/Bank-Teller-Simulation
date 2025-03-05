@@ -44,10 +44,10 @@ This project simulates a dynamic banking system where customers queue for servic
 ## Example Flow
 1. **Teller Menu**:
    - The teller is presented with a menu of options: 
-     1. New Client
-     2. Existing Client
-     3. View All Clients
-     4. Exit
+     1.New Client
+     2.Existing Client
+     3.View All Clients
+     4.Exit
    - The teller can choose to add a new client, interact with an existing client, view all clients, or exit.
 
 2. **Handling a New Client**:
@@ -74,5 +74,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 - This project was developed as part of a course assignment. All coding techniques and algorithms were implemented independently.
 - Special thanks to the course instructors for their guidance throughout the development process.
+
+[Melissa :)]
+Course: [Programming Concepts]
+Date: December 2024
 
 
