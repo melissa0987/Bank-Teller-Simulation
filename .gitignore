@@ -1,0 +1,18 @@
+# Ignore .bak files
+*.bak
+
+# Java build directories
+/bin/
+/target/
+
+# VSCode
+.vscode/
+
+
+# Java class files
+*.class
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
