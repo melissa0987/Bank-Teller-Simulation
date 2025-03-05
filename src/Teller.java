@@ -13,13 +13,7 @@ public class Teller {
         this.name = name;
     }
 
-    //to add new client method
-    public void addNewClient(List<Client> clients, String name, String dob, String address, String phone, double initialDeposit) {
-        Client newClient = new Client(name, dob, address, phone, initialDeposit);
-        clients.add(newClient);
-        Transaction.logTransaction("New client added: " + newClient); //log the activity to the transaction log file
-        ClientFileManager.saveClients(clients); //saves to client file
-    }
+    
     //looks for an existing client by client name, and date of birth
     public Client findClient(List<Client> clients, String name, String dateOfBirth) {
         for (Client client : clients) {

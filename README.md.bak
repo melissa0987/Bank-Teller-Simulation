@@ -62,11 +62,6 @@ This project simulates a dynamic banking system where customers queue for servic
 
 5. **Client Data Persistence**:
    - Client data (e.g., name, balance, account number) is saved to a file and is loaded when the program runs again.
-   
-### Demo
-Here’s a snapshot of the program in action:
-
-![Demo Screenshot](img/demo.png)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

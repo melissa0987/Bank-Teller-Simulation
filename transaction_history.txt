@@ -7,3 +7,6 @@ Deposit of $600.0 for account: 1801748167
 Withdrawal of $100.0 for account: 0191403703
 New client added: 4809815207, 	Alexandre, 	11181989, 	Toronto, 	7418520, 	50000.0, 	2024-12-08 22:21:18
 New client added: 2836989119, 	Dickson, 	08091999, 	Montreal, 	7896541285, 	8000.0, 	2024-12-08 22:21:55
+New client added: 2074885765, 	Kathleen, 	12231995, 	Ontario, 	5147894563, 	500.0, 	2024-12-08 22:38:03
+New client added: 4170633637, 	melissa, 	02021995, 	montreal, 	5147418520, 	500.0, 	2025-02-20 14:30:05
+New client added: 6778421190, 	test, 	05051992, 	123 street, 	1234567412, 	500.0, 	2025-03-05 17:00:50

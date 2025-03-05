@@ -79,8 +79,9 @@ public class Bank {
 
         //adds new client via teller
         Client newClient = new Client(name, dob, address, phone, deposit);
-        teller.addNewClient(clients, name, dob, address, phone, deposit); //adding to the list 
-        System.out.println("New client created:\n" + newClient);
+        clients.add(newClient);
+        Transaction.logTransaction("New client added: " + newClient); //log the activity to the transaction log file
+        ClientFileManager.saveClients(clients); //saves to client file
     }
     //method to handle existing client 
     public static void handleExistingClient(List<Client> clients, Teller teller) {
