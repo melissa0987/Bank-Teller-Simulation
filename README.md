@@ -75,8 +75,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - This project was developed as part of a course assignment. All coding techniques and algorithms were implemented independently.
 - Special thanks to the course instructors for their guidance throughout the development process.
 
-[Melissa :)]
-Course: [Programming Concepts]
+---
+# Author
+Melissa :) <br>
+Course: [Programming Concepts]<br>
 Date: December 2024
 
 
